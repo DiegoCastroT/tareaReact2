@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-
+import BuscadorDeProductos from './components/BuscadorProductos';
+/**
+ * Crea un proyecto React , donde el componente App nos enlace a cada uno de los siguientes ejercicios:
+Ejercicio 1)  Componente Contador: Crea un componente que muestre un número y dos botones: uno para incrementar y otro para decrementar el número.
+Ejercicio 2) Componente Formulario simple: Construye un formulario que capture el nombre de un usuario y lo muestre en un mensaje de bienvenida al enviar el formulario.
+Ejercicio 3) Componente Toggle de visibilidad: Crea un componente que muestre y oculte un elemento al hacer clic en un botón.
+ Ejercicio 4) Componente Lista de tareas: Implementa una lista de tareas donde cada tarea tenga un checkbox para marcarla como completada.
+Ejercicio 5) Componente Buscador de productos: Crea un componente que filtre una lista de productos en función de una palabra clave ingresada por el usuario.
+ */
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return(
+        <div>
+            <BuscadorDeProductos/>
+        </div>
+    )
 }
 
 export default App;
