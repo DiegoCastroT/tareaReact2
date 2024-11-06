@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 
 function FormularioSimple() {
-    const [nombre, setNombre] = useState(""); 
-    const [mensaje, setMensaje] = useState(""); 
+    const [nombre, setNombre] = useState("");
+    const [mensaje, setMensaje] = useState("");
 
     const addName = (event) => {
-        event.preventDefault(); 
-        setMensaje(`¡Bienvenido, ${nombre}!`); 
+        event.preventDefault();
+        setMensaje("Bienvenido," + nombre);
     }
 
     return (
@@ -17,13 +17,13 @@ function FormularioSimple() {
                     <input
                         type="text"
                         value={nombre}
-                        onChange={(e) => setNombre(e.target.value)} 
+                        onChange={(e) => setNombre(e.target.value)}
                         required
                     />
                 </label>
                 <button type='submit'>Enviar</button>
             </form>
-             <p>{mensaje}</p>
+            <p>{mensaje}</p>
         </div>
     );
 }

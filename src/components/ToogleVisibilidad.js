@@ -8,21 +8,24 @@ function ToggleVisibilidad() {
         setIsVisible(!isVisible); // Alternar el estado
     };
 
-    let contenido; 
+    let contenido;
+    let textoBoton;
 
     // Usando if-else para decidir qué contenido mostrar
     if (isVisible) {
         contenido = <p>¡Este es el contenido visible!</p>;
+        textoBoton = 'Ocultar Elemento';
     } else {
-        contenido = null; 
+        contenido = null;
+        textoBoton = 'Mostrar Elemento';
     }
 
     return (
         <div>
             <button onClick={changeVisibility}>
-                {isVisible ? 'Ocultar' : 'Mostrar'} Elemento
+                {textoBoton}
             </button>
-            {contenido} 
+            {contenido}
         </div>
     );
 }

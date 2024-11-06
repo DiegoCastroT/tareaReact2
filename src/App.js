@@ -1,5 +1,9 @@
 import './App.css';
-import BuscadorDeProductos from './components/BuscadorProductos';
+import ToogleVisibilidad from "./components/ToogleVisibilidad";
+import FormularioSimple from "./components/FormularioSimple";
+import ListaTareas from "./components/ListaTareas";
+import Contador from "./components/Contador";
+
 /**
  * Crea un proyecto React , donde el componente App nos enlace a cada uno de los siguientes ejercicios:
 Ejercicio 1)  Componente Contador: Crea un componente que muestre un número y dos botones: uno para incrementar y otro para decrementar el número.
@@ -11,7 +15,11 @@ Ejercicio 5) Componente Buscador de productos: Crea un componente que filtre una
 function App() {
     return(
         <div>
-            <BuscadorDeProductos/>
+            <ToogleVisibilidad/>
+            <FormularioSimple/>
+            <ListaTareas/>
+            <Contador/>
+            <ToogleVisibilidad/>
         </div>
     )
 }
