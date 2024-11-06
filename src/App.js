@@ -3,6 +3,7 @@ import ToogleVisibilidad from "./components/ToogleVisibilidad";
 import FormularioSimple from "./components/FormularioSimple";
 import ListaTareas from "./components/ListaTareas";
 import Contador from "./components/Contador";
+import BuscadorProductos from "./components/BuscadorProductos";
 
 /**
  * Crea un proyecto React , donde el componente App nos enlace a cada uno de los siguientes ejercicios:
@@ -20,6 +21,7 @@ function App() {
             <ListaTareas/>
             <Contador/>
             <ToogleVisibilidad/>
+            <BuscadorProductos/>
         </div>
     )
 }
